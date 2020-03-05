@@ -1,0 +1,5 @@
+strcmp(str1, str2)
+[aaaaa] [aaaaa] (0)
+[aaaaa] [bbbbb] (-1)
+[bbbbb] [aaaaa] (1)
+[aaaaa] [aaaaaaa] (-97)

@@ -1,0 +1,11 @@
+inserting (head): 83
+inserting (head): 86
+inserting (head): 77
+inserting (head): 15
+inserting (head): 93
+inserting (head): 35
+Linked_list [ 35 93 15 77 86 83 ]
+deleting (head): 35
+deleting (head): 93
+deleting (head): 15
+Linked_list [ 77 86 83 ]

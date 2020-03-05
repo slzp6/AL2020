@@ -1,0 +1,26 @@
+adding node to head of linked list: 83
+adding node to head of linked list: 86
+adding node to head of linked list: 77
+adding node to head of linked list: 15
+adding node to head of linked list: 93
+adding node to head of linked list: 35
+adding node to head of linked list: 86
+adding node to head of linked list: 92
+adding node to head of linked list: 49
+adding node to head of linked list: 21
+linked list [ 21 49 92 86 35 93 15 77 86 83 ]
+adding node to tail of linked list: 62
+adding node to tail of linked list: 27
+adding node to tail of linked list: 90
+adding node to tail of linked list: 59
+adding node to tail of linked list: 63
+adding node to tail of linked list: 26
+adding node to tail of linked list: 40
+adding node to tail of linked list: 26
+adding node to tail of linked list: 72
+adding node to tail of linked list: 36
+linked list [ 21 49 92 86 35 93 15 77 86 83 62 27 90 59 63 26 40 26 72 36 ]
+finding node:  [36]
+deleting node: [36]
+linked list [ 21 49 92 86 35 93 15 77 86 83 62 27 90 59 63 26 40 26 72 ]
+number of node(s):19

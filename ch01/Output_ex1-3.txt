@@ -1,0 +1,6 @@
+char:   1 byte(s)
+short:  2 byte(s)
+int:    4 byte(s)
+long:   8 byte(s)
+float:  4 byte(s)
+double: 8 byte(s)

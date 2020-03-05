@@ -1,0 +1,25 @@
+adding (head node): 83
+adding (head node): 86
+adding (head node): 77
+adding (head node): 15
+adding (head node): 93
+adding (head node): 35
+Linked_list [ 35 93 15 77 86 83 ]
+adding (tail node): 86
+adding (tail node): 92
+adding (tail node): 49
+adding (tail node): 21
+adding (tail node): 62
+adding (tail node): 27
+Linked_list [ 35 93 15 77 86 83 86 92 49 21 62 27 ]
+deleting (head node): 35
+deleting (head node): 93
+deleting (head node): 15
+Linked_list [ 77 86 83 86 92 49 21 62 27 ]
+deleting (tail node): 27
+deleting (tail node): 62
+deleting (tail node): 21
+Linked_list [ 77 86 83 86 92 49 ]
+Length of the linked list :6
+deleting entire linked list
+Linked_list [ ]

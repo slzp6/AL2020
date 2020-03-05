@@ -1,0 +1,8 @@
+array: 30 40 80 20 10 0 70 90 50 60 
+***[pivot:1 left:0 right:1]
+**[pivot:2 left:0 right:2]
+****[pivot:7 left:6 right:7]
+***[pivot:5 left:4 right:7]
+**[pivot:8 left:4 right:9]
+*[pivot:3 left:0 right:9]
+array: 0 10 20 30 40 50 60 70 80 90 

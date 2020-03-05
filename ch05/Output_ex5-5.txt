@@ -1,0 +1,2 @@
+triangle = 6.000000
+triangle = 15.000000

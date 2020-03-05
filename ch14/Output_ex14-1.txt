@@ -1,0 +1,11 @@
+push: 83
+push: 86
+push: 77
+push: 15
+push: 93
+push: 35
+stack [ 35 93 15 77 86 83 ]
+pop: 35
+pop: 93
+pop: 15
+stack [ 77 86 83 ]

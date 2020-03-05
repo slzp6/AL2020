@@ -1,0 +1,16 @@
+adding (tail node): 83
+adding (tail node): 86
+adding (tail node): 77
+adding (tail node): 15
+adding (tail node): 93
+adding (tail node): 35
+Linked_list [ 83 86 77 15 93 35 ]
+
+deleting (tail node): 35
+deleting (tail node): 93
+deleting (tail node): 15
+deleting (tail node): 77
+deleting (tail node): 86
+deleting (tail node): 83
+Linked_list [ ]
+

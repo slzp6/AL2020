@@ -1,0 +1,11 @@
+enqueue: 83
+enqueue: 86
+enqueue: 77
+enqueue: 15
+enqueue: 93
+enqueue: 35
+queue [ 83 86 77 15 93 35 ]
+dequeue: 83
+dequeue: 86
+dequeue: 77
+queue [ 15 93 35 ]

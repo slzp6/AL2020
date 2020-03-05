@@ -1,0 +1,8 @@
+adding (head node): 83
+adding (head node): 86
+adding (head node): 77
+adding (head node): 15
+adding (head node): 93
+adding (head node): 35
+Linked_list [ 35 93 15 77 86 83 ]
+found : 15  (2)

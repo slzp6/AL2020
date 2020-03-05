@@ -1,0 +1,2 @@
+array: Sunday Monday Tuesday Wednesday Thursday Friday Saturday 
+array: Friday Monday Saturday Sunday Thursday Tuesday Wednesday 

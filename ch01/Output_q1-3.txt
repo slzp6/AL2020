@@ -1,0 +1,1 @@
+25.100000(Fahrenheit) = -3.833333(Celsius)

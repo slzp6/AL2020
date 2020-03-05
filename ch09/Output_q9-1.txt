@@ -1,0 +1,5 @@
+iris data : 150
+avg. sepal length: 5.843335
+avg. sepal width : 3.054000
+avg. petal length: 3.758667
+avg. petal width : 1.198667

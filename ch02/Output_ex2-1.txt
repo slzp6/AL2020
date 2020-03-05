@@ -1,0 +1,3 @@
+X = 500
+Y = 300
+X is greater than Y.
