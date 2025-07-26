@@ -1,7 +1,8 @@
 /* code: ex1-3.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   char a;
   short b;
   int c;

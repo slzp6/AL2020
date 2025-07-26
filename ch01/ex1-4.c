@@ -1,7 +1,8 @@
 /* code: ex1-4.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   int a, b, c;
   a = 10;
   b = 3;

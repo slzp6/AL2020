@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <math.h>
 
-int main () {
+int main ()
+{
   float fx, fz;
   double dx, dz;
   long double lx, lz;
