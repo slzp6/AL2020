@@ -3,7 +3,8 @@
 #include <stdlib.h>
 #define ARRAY_SIZE 3000000
 
-int main () {
+int main ()
+{
   int *array;
   int i;
 

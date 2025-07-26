@@ -6,7 +6,8 @@
 #define DATA_SIZE 6
 
 /* doubly linked list */
-struct node {
+struct node
+{
   int data;
   struct node *prev;
   struct node *next;
@@ -14,7 +15,8 @@ struct node {
 typedef struct node NODE_TYPE;
 
 /* ------------------------------------------- */
-void dll_print_head (NODE_TYPE * head) {
+void dll_print_head (NODE_TYPE *head)
+{
   NODE_TYPE *temp;
 
   temp = head;
@@ -32,7 +34,8 @@ void dll_print_head (NODE_TYPE * head) {
 
 
 /* ------------------------------------------- */
-void dll_print_tail (NODE_TYPE * tail) {
+void dll_print_tail (NODE_TYPE *tail)
+{
   NODE_TYPE *temp;
 
   temp = tail;
@@ -50,7 +53,8 @@ void dll_print_tail (NODE_TYPE * tail) {
 
 
 /* ------------------------------------------- */
-void dll_insert_head (NODE_TYPE ** head, NODE_TYPE ** tail, int data) {
+void dll_insert_head (NODE_TYPE **head, NODE_TYPE **tail, int data)
+{
   NODE_TYPE *new_node;
 
   new_node = malloc (sizeof (NODE_TYPE));
@@ -71,7 +75,8 @@ void dll_insert_head (NODE_TYPE ** head, NODE_TYPE ** tail, int data) {
 
 
 /* ------------------------------------------- */
-void dll_insert_tail (NODE_TYPE ** head, NODE_TYPE ** tail, int data) {
+void dll_insert_tail (NODE_TYPE **head, NODE_TYPE **tail, int data)
+{
   NODE_TYPE *new_node;
 
   new_node = malloc (sizeof (NODE_TYPE));
@@ -92,7 +97,8 @@ void dll_insert_tail (NODE_TYPE ** head, NODE_TYPE ** tail, int data) {
 
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   NODE_TYPE *head;
   NODE_TYPE *tail;
   int i, data;

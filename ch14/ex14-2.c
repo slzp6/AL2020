@@ -6,14 +6,16 @@
 #define DATA_SIZE 6
 #define QUEUE_EMPTY (-1)
 
-struct node {
+struct node
+{
   int data;
   struct node *next;
 };
 typedef struct node NODE_TYPE;
 
 /* ------------------------------------------- */
-void q_enque (NODE_TYPE ** front, NODE_TYPE ** rear, int data) {
+void q_enque (NODE_TYPE **front, NODE_TYPE **rear, int data)
+{
   NODE_TYPE *new_node;
   new_node = malloc (sizeof (NODE_TYPE));
   new_node->data = data;
@@ -28,7 +30,8 @@ void q_enque (NODE_TYPE ** front, NODE_TYPE ** rear, int data) {
 }
 
 /* ------------------------------------------- */
-int q_dequeue (NODE_TYPE ** front, NODE_TYPE ** rear) {
+int q_dequeue (NODE_TYPE **front, NODE_TYPE **rear)
+{
   int data;
   NODE_TYPE *temp;
   if (*front == NULL) {
@@ -47,7 +50,8 @@ int q_dequeue (NODE_TYPE ** front, NODE_TYPE ** rear) {
 }
 
 /* ------------------------------------------- */
-void q_print (NODE_TYPE * front) {
+void q_print (NODE_TYPE *front)
+{
   printf ("queue [ ");
   while (front != NULL) {
     printf ("%02d ", front->data);
@@ -57,7 +61,8 @@ void q_print (NODE_TYPE * front) {
 }
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   int i, data1;
   NODE_TYPE *front, *rear;
 

@@ -1,7 +1,8 @@
 /* code: ex3-8.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   int i, j;
 
   i = 1;

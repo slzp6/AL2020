@@ -5,7 +5,8 @@
 
 int array[ARRAY_SIZE];
 
-int main () {
+int main ()
+{
   int i;
   for (i = 0; i < ARRAY_SIZE; i++) {
     array[i] = 100;

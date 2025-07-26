@@ -1,2 +1,5 @@
-12 19 70 44 16 38 10 30 28 98 
-Found: 16
+Initial array: 10 20 30 40 50 
+
+Result:
+Key 25 was added to the array.
+10 20 30 40 50 25 

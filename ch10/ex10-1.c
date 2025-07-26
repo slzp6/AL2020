@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /* ------------------------------------------ */
-void print_array (int v[], int n) {
+void print_array (int v[], int n)
+{
   int i;
   printf ("array: ");
   for (i = 0; i < n; i++) {
@@ -12,7 +13,8 @@ void print_array (int v[], int n) {
 }
 
 /* ------------------------------------------ */
-void bubble_sort (int v[], int n) {
+void bubble_sort (int v[], int n)
+{
   int i, j, t;
   for (i = 0; i < n - 1; i++) {
     for (j = n - 1; j > i; j--) {
@@ -28,7 +30,8 @@ void bubble_sort (int v[], int n) {
 }
 
 /* ------------------------------------------ */
-int main () {
+int main ()
+{
   int array[5]
   = { 30, 50, 20, 10, 40 };
   print_array (array, 5);

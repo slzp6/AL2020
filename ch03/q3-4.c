@@ -1,7 +1,8 @@
 /* code: q3-4.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   int i, j, k;
 
   for (i = 0; i < 2; i++) {

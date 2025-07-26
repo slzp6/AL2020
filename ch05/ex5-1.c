@@ -1,7 +1,8 @@
 /* code: ex5-1.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   int i;
 
   for (i = 0; i < 10; i++)

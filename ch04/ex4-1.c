@@ -4,7 +4,8 @@
 
 #define POINTS 1000
 
-int main () {
+int main ()
+{
   int i, count, points;
   double x, y, q;
   double pi;

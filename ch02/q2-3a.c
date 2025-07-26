@@ -1,7 +1,8 @@
 /* code: q2-3a.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   int a;
   a = 3;
   switch (a) {

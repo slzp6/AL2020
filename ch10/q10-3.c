@@ -4,12 +4,14 @@
 #include <string.h>
 
 /* ------------------------------------------ */
-int cmp_string (const void *p1, const void *p2) {
+int cmp_string (const void *p1, const void *p2)
+{
   return strcmp (*(char *const *) p1, *(char *const *) p2);
 }
 
 /* ------------------------------------------ */
-void print_str_array (char *v[], int n) {
+void print_str_array (char *v[], int n)
+{
   int i;
   printf ("array: ");
   for (i = 0; i < n; i++) {
@@ -19,7 +21,8 @@ void print_str_array (char *v[], int n) {
 }
 
 /* ------------------------------------------ */
-int main () {
+int main ()
+{
   char *array[7] = {
     "Sunday", "Monday", "Tuesday",
     "Wednesday", "Thursday", "Friday", "Saturday",

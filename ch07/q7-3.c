@@ -1,10 +1,12 @@
-/* code: q7-3.c   (v1.20.00) */
+/* code: q7-3.c   (v1.25.00) */
+
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 1000000
 
 /* ------------------------------------------- */
-void array_print (int a[], int max) {
+void array_print (int a[], int max)
+{
   int i;
   for (i = 0; i < max; i++) {
     printf ("%02d ", a[i]);
@@ -13,7 +15,8 @@ void array_print (int a[], int max) {
 }
 
 /* ------------------------------------------- */
-int array_find_empty (int a[], int max) {
+int array_find_empty (int a[], int max)
+{
   int i;
   for (i = 0; i < max; i++) {
     if (a[i] == -1) {
@@ -24,7 +27,8 @@ int array_find_empty (int a[], int max) {
 }
 
 /* ------------------------------------------- */
-void array_insert (int a[], int max, int index, int empty, int data) {
+void array_insert (int a[], int max, int index, int empty, int data)
+{
   int i;
   if (empty > index) {
     for (i = empty; i > index; i--) {
@@ -40,17 +44,26 @@ void array_insert (int a[], int max, int index, int empty, int data) {
 }
 
 /* ------------------------------------------- */
-int array_delete (int a[], int index) {
+int array_delete (int a[], int index)
+{
   int data;
   data = a[index];
   a[index] = -1;
   return data;
 }
 
+
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   int i, j, index_ins, index_del, empty, data;
-  int a[MAX];
+
+  int *a;
+  a = (int *) malloc (sizeof (int) * MAX);
+  if (a == NULL) {
+    printf ("Error! memory not allocated.");
+    exit (EXIT_FAILURE);
+  }
 
   for (j = 0; j < MAX; j++) {
     a[j] = rand () % 100;
@@ -71,6 +84,10 @@ int main () {
     data = array_delete (a, index_del);
     /* array_print( a, MAX ); */
   }
+
+
+  free (a);
+
   return 0;
 }
 

@@ -5,7 +5,8 @@
 #define HEIGHT 20
 
 /* ------------------------------------------- */
-void cell_evolve (int array[HEIGHT][WIDTH]) {
+void cell_evolve (int array[HEIGHT][WIDTH])
+{
   int array_new[HEIGHT][WIDTH];
   int x, y, n, x_width, y_height;
 
@@ -34,7 +35,8 @@ void cell_evolve (int array[HEIGHT][WIDTH]) {
 }
 
 /* ------------------------------------------- */
-void cell_first_generation (int array[HEIGHT][WIDTH]) {
+void cell_first_generation (int array[HEIGHT][WIDTH])
+{
   int x, y, r;
   for (x = 0; x < WIDTH; x++) {
     for (y = 0; y < HEIGHT; y++) {
@@ -50,7 +52,8 @@ void cell_first_generation (int array[HEIGHT][WIDTH]) {
 }
 
 /* ------------------------------------------- */
-void cell_print (int array[HEIGHT][WIDTH], int generation) {
+void cell_print (int array[HEIGHT][WIDTH], int generation)
+{
   int x, y;
   printf ("[Generation: %05d]\n", generation);
   for (y = 0; y < HEIGHT; y++) {
@@ -69,7 +72,8 @@ void cell_print (int array[HEIGHT][WIDTH], int generation) {
 }
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   int i;
   int array[HEIGHT][WIDTH];
   cell_first_generation (array);

@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main () {
+int main ()
+{
   FILE *fptr;
   if (NULL == (fptr = fopen ("ex9-2-output.txt", "w"))) {
     fprintf (stderr, "ERROR: Can not open file [output2.txt]");

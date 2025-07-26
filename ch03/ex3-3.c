@@ -1,7 +1,8 @@
 /* code: ex3-3.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   int i, j;
 
   for (i = 1; i < 10; i++) {

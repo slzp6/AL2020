@@ -1,7 +1,8 @@
 /* code: ex6-1.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   int a, b, c, d, e;
   int sum, avg;
 

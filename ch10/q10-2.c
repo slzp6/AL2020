@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /* ------------------------------------------ */
-void print_array (int v[], int n) {
+void print_array (int v[], int n)
+{
   int i;
   printf ("array: ");
   for (i = 0; i < n; i++) {
@@ -13,7 +14,8 @@ void print_array (int v[], int n) {
 }
 
 /* ------------------------------------------ */
-int int_compare (const void *va, const void *vb) {
+int int_compare (const void *va, const void *vb)
+{
   int a, b;
   a = *(int *) va;
   b = *(int *) vb;
@@ -29,7 +31,8 @@ int int_compare (const void *va, const void *vb) {
 }
 
 /* ------------------------------------------ */
-int main () {
+int main ()
+{
   int array[5]
   = { 30, 50, 20, 10, 40 };
 

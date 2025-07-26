@@ -1,7 +1,8 @@
 /* code: ex2-2.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   int x, y;
   x = 500;
   y = 700;

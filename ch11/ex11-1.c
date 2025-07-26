@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /* ------------------------------------------ */
-void print_array (int v[], int n) {
+void print_array (int v[], int n)
+{
   int i;
   printf ("array: ");
   for (i = 0; i < n; i++) {
@@ -13,7 +14,8 @@ void print_array (int v[], int n) {
 }
 
 /* ------------------------------------------ */
-int partition (int v[], int lower_bound, int upper_bound) {
+int partition (int v[], int lower_bound, int upper_bound)
+{
   int a, down, up, temp;
 
   a = v[lower_bound];
@@ -39,7 +41,8 @@ int partition (int v[], int lower_bound, int upper_bound) {
 }
 
 /* ------------------------------------------ */
-void quicksort (int v[], int left, int right) {
+void quicksort (int v[], int left, int right)
+{
   int p;
   if (left >= right) {
     return;
@@ -50,7 +53,8 @@ void quicksort (int v[], int left, int right) {
 }
 
 /* ------------------------------------------ */
-int main () {
+int main ()
+{
   int array[10]
   = { 80, 40, 30, 20, 10, 00, 70, 90, 50, 60 };
 

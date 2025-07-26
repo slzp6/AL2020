@@ -1,7 +1,8 @@
 /* code: q6-1.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   float a[5];
   int i;
   float sum, avg;

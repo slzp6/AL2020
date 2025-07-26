@@ -5,7 +5,8 @@
 #define MAX 100000000
 
 /* ------------------------------------------ */
-void print_array (int v[], int n) {
+void print_array (int v[], int n)
+{
   int i;
   printf ("array: ");
   for (i = 0; i < n; i++) {
@@ -15,7 +16,8 @@ void print_array (int v[], int n) {
 }
 
 /* ------------------------------------------ */
-void rand_data (int v[], int n) {
+void rand_data (int v[], int n)
+{
   int i;
   for (i = 0; i < n; i++) {
     v[i] = rand () % (MAX / 10);
@@ -23,7 +25,8 @@ void rand_data (int v[], int n) {
 }
 
 /* ------------------------------------------ */
-int partition (int v[], int lower_bound, int upper_bound) {
+int partition (int v[], int lower_bound, int upper_bound)
+{
   int a, down, up, temp;
 
   a = v[lower_bound];
@@ -49,7 +52,8 @@ int partition (int v[], int lower_bound, int upper_bound) {
 }
 
 /* ------------------------------------------ */
-void quicksort (int v[], int left, int right) {
+void quicksort (int v[], int left, int right)
+{
   int p;
   if (left >= right) {
     return;
@@ -60,7 +64,8 @@ void quicksort (int v[], int left, int right) {
 }
 
 /* ------------------------------------------ */
-int main (int argc, char **argv) {
+int main (int argc, char **argv)
+{
   int *array;
 
   array = malloc (sizeof (int) * MAX);

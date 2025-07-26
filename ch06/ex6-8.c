@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /* ------------------------------------------- */
-void string_copy (char *target, char *source) {
+void string_copy (char *target, char *source)
+{
   int i;
   i = 0;
   while (source[i] != '\0') {
@@ -13,7 +14,8 @@ void string_copy (char *target, char *source) {
 }
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   char s[20] = "University";
   char t[20];
 

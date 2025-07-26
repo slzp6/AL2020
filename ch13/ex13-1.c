@@ -2,14 +2,16 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-struct node {
+struct node
+{
   int data;
   struct node *next;
 };
 typedef struct node NODE_TYPE;
 
 /* ------------------------------------------- */
-void linked_list_print (NODE_TYPE * node) {
+void linked_list_print (NODE_TYPE *node)
+{
   while (NULL != node) {
     printf ("%d ", node->data);
     node = node->next;
@@ -18,7 +20,8 @@ void linked_list_print (NODE_TYPE * node) {
 }
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   NODE_TYPE *node;
   node = malloc (sizeof (NODE_TYPE));
   node->data = 300;

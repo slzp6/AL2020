@@ -7,7 +7,8 @@
 #define COL  256
 #define FILTER_SIZE 3
 
-struct pgm {
+struct pgm
+{
   int row;
   int col;
   int max;
@@ -17,7 +18,8 @@ typedef struct pgm PGM_TYPE;
 
 
 /* ------------------------------------------- */
-void pgm_read (PGM_TYPE * image, char *filename) {
+void pgm_read (PGM_TYPE *image, char *filename)
+{
   FILE *infile;
   int i, j;
   char magic_number[32];
@@ -45,7 +47,8 @@ void pgm_read (PGM_TYPE * image, char *filename) {
 }
 
 /* ------------------------------------------- */
-void pgm_write (PGM_TYPE * image, char *filename) {
+void pgm_write (PGM_TYPE *image, char *filename)
+{
   FILE *outfile;
   int i, j;
 
@@ -68,7 +71,8 @@ void pgm_write (PGM_TYPE * image, char *filename) {
 }
 
 /* ------------------------------------------- */
-void convolution (PGM_TYPE * image_input, PGM_TYPE * image_output) {
+void convolution (PGM_TYPE *image_input, PGM_TYPE *image_output)
+{
   int i, j, k, l, px, py, sum;
   float dsum;
 
@@ -105,7 +109,8 @@ void convolution (PGM_TYPE * image_input, PGM_TYPE * image_output) {
 }
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   PGM_TYPE *pgm_input;
   PGM_TYPE *pgm_output;
 

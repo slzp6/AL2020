@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main () {
+int main ()
+{
   int i, j, k;
   int array[2][3][4];
 

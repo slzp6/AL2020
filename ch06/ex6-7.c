@@ -1,7 +1,8 @@
 /* code: ex6-7.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   char s[4];
   s[0] = 'O';
   s[1] = 'U';

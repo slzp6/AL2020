@@ -5,7 +5,8 @@
 #define STACK_UNDERFLOW (-1)
 #define DATA_SIZE 6
 
-struct node {
+struct node
+{
   int data;
   struct node *next;
 };
@@ -13,7 +14,8 @@ typedef struct node NODE_TYPE;
 
 
 /* ------------------------------------------- */
-void stack_push (NODE_TYPE ** head, int data) {
+void stack_push (NODE_TYPE **head, int data)
+{
   NODE_TYPE *new_node;
   new_node = malloc (sizeof (NODE_TYPE));
   new_node->data = data;
@@ -22,7 +24,8 @@ void stack_push (NODE_TYPE ** head, int data) {
 }
 
 /* ------------------------------------------- */
-int stack_pop (NODE_TYPE ** head) {
+int stack_pop (NODE_TYPE **head)
+{
   int data;
   NODE_TYPE *temp;
   if (*head == NULL) {
@@ -36,7 +39,8 @@ int stack_pop (NODE_TYPE ** head) {
 }
 
 /* ------------------------------------------- */
-void stack_print (NODE_TYPE * head) {
+void stack_print (NODE_TYPE *head)
+{
   if (head == NULL) {
     printf ("stack is empty.\n");
     return;
@@ -50,7 +54,8 @@ void stack_print (NODE_TYPE * head) {
 }
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   NODE_TYPE *stack;
   int i, data1;
   stack = NULL;

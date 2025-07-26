@@ -10,13 +10,15 @@
 #define DEQUEUE_FAILURE    -2
 
 /* ------------------------------------------- */
-void rb_queue_init (int *front, int *rear) {
+void rb_queue_init (int *front, int *rear)
+{
   *front = 0;
   *rear = 0;
 }
 
 /* ------------------------------------------- */
-int rb_enqueue (int q[], int *front, int *rear, int data) {
+int rb_enqueue (int q[], int *front, int *rear, int data)
+{
   int index_f, index_r, index_q;
   index_f = *front % MAX;
   index_r = (*rear + 1) % MAX;
@@ -31,7 +33,8 @@ int rb_enqueue (int q[], int *front, int *rear, int data) {
 }
 
 /* ------------------------------------------- */
-int rb_dequeue (int q[], int *front, int *rear, int *data) {
+int rb_dequeue (int q[], int *front, int *rear, int *data)
+{
   int index;
   if (*front != *rear) {
     index = (*front)++ % MAX;
@@ -44,7 +47,8 @@ int rb_dequeue (int q[], int *front, int *rear, int *data) {
 }
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   int queue[MAX];
   int front, rear, data;
   int stat;

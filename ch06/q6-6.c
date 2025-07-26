@@ -1,11 +1,17 @@
 /* code: q6-6.c   (v1.20.00) */
+
+/* In Visual Studio (C++), the error (E0513, C2440) 
+in q6-6.c can be avoided by casting. 
+Using the strcpy_s() function is also recommended. */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 #define MAX 10
 
-struct student {
+struct student
+{
   int id;
   char grade;
   char name[128];
@@ -13,7 +19,8 @@ struct student {
 typedef struct student STUDENT_TYPE;
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   STUDENT_TYPE db1[MAX];
   STUDENT_TYPE *db2[MAX];
   int i;
@@ -29,6 +36,7 @@ int main () {
   printf ("\n");
   printf ("database2\n");
   for (i = 0; i < MAX; i++) {
+    /* db2[i] = (STUDENT_TYPE*) malloc(sizeof(STUDENT_TYPE)); */
     db2[i] = malloc (sizeof (STUDENT_TYPE));
     db2[i]->id = 200 + i;
     db2[i]->grade = 'a' + rand () % 5;

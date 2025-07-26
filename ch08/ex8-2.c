@@ -9,13 +9,15 @@
 #define DEQUEUE_FAILURE    -2
 
 /* ------------------------------------------- */
-void queue_init (int *front, int *rear) {
+void queue_init (int *front, int *rear)
+{
   *front = -1;
   *rear = -1;
 }
 
 /* ------------------------------------------- */
-int enqueue (int q[], int *rear, int data) {
+int enqueue (int q[], int *rear, int data)
+{
   if (*rear < MAX - 1) {
     *rear = *rear + 1;
     q[*rear] = data;
@@ -27,7 +29,8 @@ int enqueue (int q[], int *rear, int data) {
 }
 
 /* ------------------------------------------- */
-int dequeue (int q[], int *front, int rear, int *data) {
+int dequeue (int q[], int *front, int rear, int *data)
+{
   if (*front == rear) {
     return DEQUEUE_FAILURE;
   }
@@ -37,7 +40,8 @@ int dequeue (int q[], int *front, int rear, int *data) {
 }
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   int queue[MAX];
   int front, rear, data;
   int stat;

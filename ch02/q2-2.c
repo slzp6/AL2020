@@ -1,7 +1,8 @@
 /* code: q2-2.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   char grade;
 
   grade = 'b';

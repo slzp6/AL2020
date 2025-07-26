@@ -3,7 +3,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main () {
+int main ()
+{
   int i, j, count, points;
   double x, y, q;
   double pi;

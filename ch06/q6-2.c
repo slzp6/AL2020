@@ -1,7 +1,8 @@
 /* code: q6-2.c   (v1.20.00) */
 #include <stdio.h>
 #define TABLE 9
-int main () {
+int main ()
+{
   int i, j;
   int a[TABLE][TABLE];
 

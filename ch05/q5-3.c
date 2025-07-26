@@ -1,7 +1,8 @@
 /* code: q5-3.c   (v1.20.00) */
 #include <stdio.h>
 
-int fibonacci (int n) {
+int fibonacci (int n)
+{
   if (n == 0) {
     return 0;
   }
@@ -13,7 +14,8 @@ int fibonacci (int n) {
   }
 }
 
-int main () {
+int main ()
+{
   int i;
   i = 10;
   printf ("fibonacci(%d) = %d\n", i, fibonacci (i));

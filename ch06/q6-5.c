@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main () {
+int main ()
+{
   char s0[] = "abcdefg";
   int i;
   i = strlen (s0);

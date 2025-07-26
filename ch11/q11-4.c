@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /* ------------------------------------------ */
-void print_array (int v[], int n) {
+void print_array (int v[], int n)
+{
   int i;
   printf ("\n");
   for (i = 0; i < n; i++) {
@@ -12,7 +13,8 @@ void print_array (int v[], int n) {
 }
 
 /* ------------------------------------------ */
-void merge_sort (int v[], int lb, int ub, int v_temp[]) {
+void merge_sort (int v[], int lb, int ub, int v_temp[])
+{
   int i, j, k, c;
 
   if (lb >= ub) {
@@ -44,7 +46,8 @@ void merge_sort (int v[], int lb, int ub, int v_temp[]) {
 }
 
 /* ------------------------------------------ */
-int main () {
+int main ()
+{
   int array[10] = { 8, 4, 3, 2, 1, 0, 7, 9, 5, 6 };
   int array_temp[10];
 

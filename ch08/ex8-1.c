@@ -9,12 +9,14 @@
 #define POP_FAILURE    -2
 
 /* ------------------------------------------- */
-void stack_init (int *top) {
+void stack_init (int *top)
+{
   *top = 0;
 }
 
 /* ------------------------------------------- */
-void display (int stack[], int top) {
+void display (int stack[], int top)
+{
   int i;
   printf ("STACK(%d): ", top);
   for (i = 0; i < top; i++) {
@@ -24,7 +26,8 @@ void display (int stack[], int top) {
 }
 
 /* ------------------------------------------- */
-int push (int stack[], int *top, int data) {
+int push (int stack[], int *top, int data)
+{
   if (*top >= MAX) {
     /* stack overflow */
     return PUSH_FAILURE;
@@ -37,7 +40,8 @@ int push (int stack[], int *top, int data) {
 }
 
 /* ------------------------------------------- */
-int pop (int stack[], int *top, int *data) {
+int pop (int stack[], int *top, int *data)
+{
   if ((*top) > 0) {
     *data = stack[(*top) - 1];
     (*top)--;
@@ -50,7 +54,8 @@ int pop (int stack[], int *top, int *data) {
 }
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   int stack[MAX];
   int top, data;
 

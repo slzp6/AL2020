@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /* ------------------------------------------- */
-int **m2d_allocate (int rows, int columns) {
+int **m2d_allocate (int rows, int columns)
+{
   int **array;
   int i;
   array = malloc (rows * sizeof (int *));
@@ -14,7 +15,8 @@ int **m2d_allocate (int rows, int columns) {
 }
 
 /* ------------------------------------------- */
-void m2d_deallocate (int **array, int rows) {
+void m2d_deallocate (int **array, int rows)
+{
   int i;
   for (i = 0; i < rows; i++) {
     free (array[i]);
@@ -23,7 +25,8 @@ void m2d_deallocate (int **array, int rows) {
 }
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   int **array;
   int i, j, rows, columns;
 

@@ -4,7 +4,8 @@
 
 #define IRIS_DATA "iris.dat"
 
-int main () {
+int main ()
+{
   FILE *fptr;
   float sl, sw, pl, pw;
   float s_sl, s_sw, s_pl, s_pw;

@@ -4,7 +4,8 @@
 #define ARRAY_SIZE 13
 
 /* ------------------------------------------- */
-int binary_search (int array[], int num, int key) {
+int binary_search (int array[], int num, int key)
+{
   int middle, low, high;
   low = 0;
   high = num - 1;
@@ -24,7 +25,8 @@ int binary_search (int array[], int num, int key) {
 }
 
 /* ------------------------------------------- */
-void print_array (int array[], int n) {
+void print_array (int array[], int n)
+{
   int i;
   for (i = 0; i < n; i++) {
     printf ("%d ", array[i]);
@@ -33,7 +35,8 @@ void print_array (int array[], int n) {
 }
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   int index, key;
   int array[ARRAY_SIZE] = {
     50, 80, 150, 210, 250, 280, 330,

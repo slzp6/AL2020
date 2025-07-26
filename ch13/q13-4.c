@@ -4,13 +4,15 @@
 
 #define DATA_SIZE 10
 
-struct node {
+struct node
+{
   int data;
   struct node *next;
 };
 typedef struct node NODE_TYPE;
 
-struct linked_list {
+struct linked_list
+{
   NODE_TYPE *head;
   NODE_TYPE *tail;
   NODE_TYPE *current;
@@ -18,7 +20,8 @@ struct linked_list {
 typedef struct linked_list LINKED_LIST;
 
 /* ------------------------------------------- */
-void linked_list_init (LINKED_LIST * list) {
+void linked_list_init (LINKED_LIST *list)
+{
   list->head = NULL;
   list->tail = NULL;
   list->current = NULL;
@@ -26,7 +29,8 @@ void linked_list_init (LINKED_LIST * list) {
 
 
 /* ------------------------------------------- */
-void linked_list_insert_node_h (LINKED_LIST * list, int data) {
+void linked_list_insert_node_h (LINKED_LIST *list, int data)
+{
   NODE_TYPE *node;
 
   node = malloc (sizeof (NODE_TYPE));
@@ -44,7 +48,8 @@ void linked_list_insert_node_h (LINKED_LIST * list, int data) {
 }
 
 /* ------------------------------------------- */
-void linked_list_insert_node_t (LINKED_LIST * list, int data) {
+void linked_list_insert_node_t (LINKED_LIST *list, int data)
+{
   NODE_TYPE *node;
 
   node = malloc (sizeof (NODE_TYPE));
@@ -62,7 +67,8 @@ void linked_list_insert_node_t (LINKED_LIST * list, int data) {
 }
 
 /* ------------------------------------------- */
-NODE_TYPE *linked_list_find_node (LINKED_LIST * list, int data) {
+NODE_TYPE *linked_list_find_node (LINKED_LIST *list, int data)
+{
   NODE_TYPE *node;
 
   node = list->head;
@@ -77,7 +83,8 @@ NODE_TYPE *linked_list_find_node (LINKED_LIST * list, int data) {
 
 
 /* ------------------------------------------- */
-void linked_list_delete_node (LINKED_LIST * list, NODE_TYPE * node) {
+void linked_list_delete_node (LINKED_LIST *list, NODE_TYPE *node)
+{
   if (node == list->head) {
     if (NULL == list->head->next) {
       list->head = NULL;
@@ -101,7 +108,8 @@ void linked_list_delete_node (LINKED_LIST * list, NODE_TYPE * node) {
 }
 
 /* ------------------------------------------- */
-void linked_list_print (LINKED_LIST * list) {
+void linked_list_print (LINKED_LIST *list)
+{
   NODE_TYPE *node;
 
   printf ("linked list [ ");
@@ -114,7 +122,8 @@ void linked_list_print (LINKED_LIST * list) {
 }
 
 /* ------------------------------------------- */
-int linked_list_count_node (LINKED_LIST * list) {
+int linked_list_count_node (LINKED_LIST *list)
+{
   NODE_TYPE *node;
   int i;
 
@@ -130,7 +139,8 @@ int linked_list_count_node (LINKED_LIST * list) {
 
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   LINKED_LIST *list;
   NODE_TYPE *node;
   int i, data1, data2, del_data;

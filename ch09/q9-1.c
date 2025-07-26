@@ -5,14 +5,16 @@
 #define IRIS_DATA "iris.dat"
 #define MAX_ARRAY 256
 
-struct iris {
+struct iris
+{
   float sl, sw, pl, pw;
   char name[128];
 };
 typedef struct iris IRIS_TYPE;
 
 /* ------------------------------------------- */
-int read_iris_data (IRIS_TYPE data[], int num, char *filename) {
+int read_iris_data (IRIS_TYPE data[], int num, char *filename)
+{
   FILE *fptr;
   float sl, sw, pl, pw;
   char name[128];
@@ -39,7 +41,8 @@ int read_iris_data (IRIS_TYPE data[], int num, char *filename) {
 }
 
 /* ------------------------------------------- */
-IRIS_TYPE find_iris_avg (IRIS_TYPE data[], int num) {
+IRIS_TYPE find_iris_avg (IRIS_TYPE data[], int num)
+{
   IRIS_TYPE avg;
   int i;
   float s_sl, s_sw, s_pl, s_pw;
@@ -61,7 +64,8 @@ IRIS_TYPE find_iris_avg (IRIS_TYPE data[], int num) {
 }
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   int num;
   IRIS_TYPE iris_data[MAX_ARRAY];
   IRIS_TYPE avg;

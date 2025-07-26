@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   int **array;
   int i, j, rows, columns;
 

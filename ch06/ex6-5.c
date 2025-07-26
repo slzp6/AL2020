@@ -1,7 +1,8 @@
 /* code: ex6-5.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   int i, j;
   int a[3][4] = {
     {0, 10, 20, 30},

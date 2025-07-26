@@ -4,7 +4,8 @@
 #define MAX 10
 
 /* ------------------------------------------ */
-void print_array (int v[], int n) {
+void print_array (int v[], int n)
+{
   int i;
   printf ("array: ");
   for (i = 0; i < n; i++) {
@@ -14,7 +15,8 @@ void print_array (int v[], int n) {
 }
 
 /* ------------------------------------------ */
-void radix_sort (int a[], int n) {
+void radix_sort (int a[], int n)
+{
   int i, max, exp;
   int temp[MAX];
   int bucket[10];
@@ -48,7 +50,8 @@ void radix_sort (int a[], int n) {
 }
 
 /* ------------------------------------------ */
-int main () {
+int main ()
+{
   int array[MAX]
   = { 12, 19, 10, 28, 30, 01, 502, 16, 34, 177 };
 

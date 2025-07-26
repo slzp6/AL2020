@@ -4,7 +4,8 @@
 #define ARRAY_SIZE 13
 
 /* ------------------------------------------- */
-int linear_search (int array[], int n, int key) {
+int linear_search (int array[], int n, int key)
+{
   int i;
   for (i = 0; i < n; i++) {
     if (array[i] == key) {
@@ -15,7 +16,8 @@ int linear_search (int array[], int n, int key) {
 }
 
 /* ------------------------------------------- */
-void print_array (int array[], int n) {
+void print_array (int array[], int n)
+{
   int i;
   for (i = 0; i < n; i++) {
     printf ("%d ", array[i]);
@@ -24,7 +26,8 @@ void print_array (int array[], int n) {
 }
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   int index, key;
   int array[ARRAY_SIZE] = {
     900, 990, 210, 50, 80, 150, 330,

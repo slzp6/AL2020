@@ -4,7 +4,8 @@
 
 #define ARRAY_SIZE 10
 
-int main () {
+int main ()
+{
   int a[ARRAY_SIZE];
   int i;
 

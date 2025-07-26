@@ -4,7 +4,8 @@
 #define STACK_SIZE 2048
 
 /* ------------------------------------------ */
-void print_array (int v[], int n) {
+void print_array (int v[], int n)
+{
   int i;
   printf ("\n");
   for (i = 0; i < n; i++) {
@@ -13,7 +14,8 @@ void print_array (int v[], int n) {
 }
 
 /* ------------------------------------------ */
-int partition (int v[], int lower_bound, int upper_bound) {
+int partition (int v[], int lower_bound, int upper_bound)
+{
   int a, down, up, temp;
 
   a = v[lower_bound];
@@ -39,7 +41,8 @@ int partition (int v[], int lower_bound, int upper_bound) {
 }
 
 /* ------------------------------------------ */
-void quicksort_stack (int v[], int n) {
+void quicksort_stack (int v[], int n)
+{
   int left, right, i, sptr;
   int stack_lower_bound[STACK_SIZE];
   int stack_upper_bound[STACK_SIZE];
@@ -77,7 +80,8 @@ void quicksort_stack (int v[], int n) {
 
 
 /* ------------------------------------------ */
-int main () {
+int main ()
+{
   int array[10]
   = { 80, 40, 30, 20, 10, 00, 70, 90, 50, 60 };
 

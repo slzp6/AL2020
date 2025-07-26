@@ -3,7 +3,8 @@
 #include <string.h>
 
 /* ------------------------------------------- */
-int main () {
+int main ()
+{
   char s[20] = "University";
   char t[20];
   strcpy (t, s);

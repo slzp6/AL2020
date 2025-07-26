@@ -1,7 +1,8 @@
 /* code: q5-5.c   (v1.20.00) */
 #include <stdio.h>
 
-int factorial (int n) {
+int factorial (int n)
+{
   if (n == 0) {
     return 1;
   }
@@ -10,7 +11,8 @@ int factorial (int n) {
   }
 }
 
-int main () {
+int main ()
+{
   int i;
   /* i = -1; */
   i = 1;

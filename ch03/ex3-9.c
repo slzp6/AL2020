@@ -1,7 +1,8 @@
 /* code: ex3-9.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   int i;
 
   i = 0;

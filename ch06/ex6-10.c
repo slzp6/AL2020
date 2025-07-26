@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main () {
+int main ()
+{
   char s0[] = "aaaaa";
   char s1[] = "bbbbb";
   char s2[] = "aaaaaaa";

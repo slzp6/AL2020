@@ -1,7 +1,8 @@
 /* code: ex2-3.c   (v1.20.00) */
 #include <stdio.h>
 
-int main () {
+int main ()
+{
   char grade;
 
   grade = 'B';
